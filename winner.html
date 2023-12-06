@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess Game</title>
+    </head>
+    <body></body>
+    <script>
+
+        const h1 = document.createElement('h1');
+        const txt1 = document.createTextNode('Congoratulations...!👏 ');
+        h1.appendChild(txt1);
+        h1.style.textAlign = 'center';
+        document.body.appendChild(h1);
+
+        const h2 = document.createElement('h2');
+        const txt2 = document.createTextNode('You won the game! 🥳');
+        h2.appendChild(txt2);
+        h2.style.textAlign = 'center';
+        document.body.appendChild(h2);
+        
+        const attempts = localStorage.getItem('attempts');
+        const h3 = document.createElement('p');
+        const txt3 = document.createTextNode("You gussed the number in "+attempts+" attempts");
+        h3.appendChild(txt3);
+        h3.style.textAlign = 'center';
+        document.body.appendChild(h3)
+
+        const div = document.createElement('div');
+        div.style.display = 'flex';
+        div.style.justifyContent = 'center';
+        div.style.alignItems = 'center';
+
+        const div2 = document.createElement('div');
+        div2.style.display = 'flex';
+        div2.style.justifyContent = 'center';
+        const img = document.createElement('img');
+        img.src = "img/img3.png";
+        img.style.height ='225px';
+        img.style.width ='225px';
+        div2.appendChild(img);
+        document.body.appendChild(div2);
+
+        document.body.appendChild(div);
+    </script>
+</html>
