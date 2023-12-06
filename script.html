@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess Game</title>
+    </head>
+    <body></body>
+    <script>
+        const h1 = document.createElement('h1');
+        const text = document.createTextNode('Hello...👋');
+        h1.appendChild(text);
+        h1.style.textAlign = 'center';
+        document.body.appendChild(h1);
+
+        const h2 = document.createElement('h2');
+        const text2 = document.createTextNode('Welcome to guess the number...🙏');
+        h2.appendChild(text2);
+        h2.style.textAlign = 'center';
+        document.body.appendChild(h2);
+
+        const div1 = document.createElement('div');
+        div1.style.display = 'flex';
+        div1.style.justifyContent = 'center';
+        const btn1 = document.createElement('button');
+        const val = document.createTextNode('Click Here to Start');
+        btn1.appendChild(val);
+
+        const link = document.createElement('a');
+        link.href = 'numguess.html';
+        link.appendChild(btn1);
+        div1.appendChild(link);
+        document.body.appendChild(div1);
+
+        const br1 = document.createElement('br');
+        document.body.appendChild(br1);
+        const br2 = document.createElement('br');
+        document.body.appendChild(br2);
+
+        const div2 = document.createElement('div');
+        div2.style.display = 'flex';
+        div2.style.justifyContent = 'center';
+        const img = document.createElement('img');
+        img.src = 'img/img1.png';
+        img.style.height ='225px';
+        img.style.width ='225px';
+        div2.appendChild(img);
+        document.body.appendChild(div2);
+    </script>
+</html>
